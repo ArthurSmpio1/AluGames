@@ -5,7 +5,7 @@ function alterarStatus(id){
     let jogoEscolhido = document.getElementById(`game-${id}`);
     let anteriorAlteracao = jogoEscolhido.children[2].className;
 
-    let onOff = jogoEscolhido.children[2].textContent  = 'Alugar' ? devolver : alugar;
+    let onOff = jogoEscolhido.children[2].textContent === 'Alugar' ? devolver : alugar;
     //alugar e devolver
 
     console.log(onOff);
