@@ -10,6 +10,12 @@ function alterarStatus(id){
 
     console.log(onOff);
 
+    let confirmation = prompt('Are you sure? this action cannot be undone... (Y/N)');
+
+    if (confirmation === 'N'){
+        return;
+    }
+
     jogoEscolhido.children[0].className = onOff[0];
     jogoEscolhido.children[2].className = onOff[2];
     jogoEscolhido.children[2].textContent = onOff[3];
